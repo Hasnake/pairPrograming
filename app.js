@@ -82,9 +82,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-var arr = [2,3,4];
-var total=0;
-for(var i in arr) { total += arr[i]; }
+function sumArray(myArray) {
+ // calculate total
+ var total = 0;
+ for (var i = 0; i < myArray.length; i++) {
+   total += myArray[i];
+ }
+ return [total, testSumArray[0]+ ' , '+ testSumArray[1]+ ' , '+ testSumArray[2] + 'was passed in as an array of numbers, and ' + total + ' is their sum.'];
+}
+
+var testSumArray = [2,3,4];
+sumArray(testSumArray);
 
 
 // Here is the test for sumArray(); uncomment it to run it
