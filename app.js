@@ -102,13 +102,31 @@ testSumArray(testArray);
 
 /////////////////////////////////////
 /* Problem 5
-Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiplyArray() that takes an array of numbers as its argument
+and returns an array whose first element is the product of those numbers,
+ and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The numbers 2,3,4 have a product of 24."
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// Write your code here
+// Write your code here.
+function sumArray(myArray) {
+ // calculate total
+ var total = 1;
+ for (var i = 0; i < myArray.length; i++) {
+   total = total*myArray[i];
+ }
+ return [total, 'the numbers'+'  '+testSumArray[0]+ ' , '+ testSumArray[1]+ ' , '+ testSumArray[2] +' '+ 'have a product of ' + total];
+}
+
+var testSumArray = [2,3,4];
+sumArray(testSumArray);
+
+
+// Here is the test for sumArray(); uncomment it to run it
+testSumArray(testArray);
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
