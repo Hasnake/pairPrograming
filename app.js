@@ -110,7 +110,7 @@ and returns an array whose first element is the product of those numbers,
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// Write your code here
+// Write your code here.
 function sumArray(myArray) {
  // calculate total
  var total = 1;
