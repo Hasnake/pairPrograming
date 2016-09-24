@@ -12,20 +12,22 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+//testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops,
 //and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
-function sum(x,y{
+function sum(x,y){
   var sum = x+y;
-  return [sum,'The sum of' +''+ x 'and'+ y is sum +'.']
+  return [sum,'The sum of' +''+ x 'and'+ y + 'is' sum +'.'];
 }
 sum(4,7);
 
 
+
 /* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element
+//is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The product of 4 and 7 is 28."
 
@@ -34,13 +36,20 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(4,7);
+function multiply(x,y){
+  var product = x*y;
+  return [product,'The product of' +''+ x 'and'+ y + 'is' multiply +'.'];
+}
+multiply(4,7);
+
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 3
-Write a function called sumAndMultiply() that takes in three numbers as arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
+Write a function called sumAndMultiply() that takes in three numbers as arguments and returns an array where
+//the first element is the sum of those three numbers, the second element is the product of those three numbers,
+//and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
@@ -50,7 +59,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+function sumAndMultiply(x,y,z){
+var sum =x+y+z;
+var product=x*y*z;
+return [sum,product,x +' '+'and' +  ' '+y +' '+ 'and' +z+' '+ 'sum to'+ sum,'The product of'+' '+x + 'and'+' '+ y + 'and'+' ' +z + 'is'+' '+ product];
+}
+
+sumAndMultiply(4,7,5);
+
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
 
