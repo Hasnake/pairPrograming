@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo)
 
@@ -26,8 +26,7 @@ testSum(4, 7);
 
 Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element
 
-//is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values
-
+//is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values.
 //that were input into the function:
 //"The product of 4 and 7 is 28."
 Test this function by hand in the console to get it working, and when you think it is finished,
