@@ -10,6 +10,11 @@ Test this function by hand in the console to get it working, and when you think 
 //uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+function sum(x,y){
+  var sum = x+y;
+  return [sum,'The sum of' +' '+ x 'and'+ y + 'is' sum +'.'];
+}
+sum(4,7);
 
 // Here is the test for sum(); uncomment it to run it
 //testSum(4, 7);
@@ -17,11 +22,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops,
 //and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
-function sum(x,y){
-  var sum = x+y;
-  return [sum,'The sum of' +''+ x 'and'+ y + 'is' sum +'.'];
-}
-sum(4,7);
+
+
 
 
 
@@ -111,17 +113,17 @@ and returns an array whose first element is the product of those numbers,
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here.
-function sumArray(myArray) {
+function multiplyArray(myArray) {
  // calculate total
  var total = 1;
  for (var i = 0; i < myArray.length; i++) {
    total = total*myArray[i];
  }
- return [total, 'the numbers'+'  '+testSumArray[0]+ ' , '+ testSumArray[1]+ ' , '+ testSumArray[2] +' '+ 'have a product of ' + total];
+ return [total, 'the numbers'+'  '+testMultiplyArray[0]+ ' , '+ testMultiplyArray[1]+ ' , '+ testMultiplyArray[2] +' '+ 'have a product of ' + total];
 }
 
-var testSumArray = [2,3,4];
-sumArray(testSumArray);
+var testMultiplyArray = [2,3,4];
+multiplyArray(testMultiplyArray);
 
 
 // Here is the test for sumArray(); uncomment it to run it
