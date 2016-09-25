@@ -11,8 +11,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function sum(x,y){
- var sum = x + y;
- return [sum,'The sum of' + ' ' + x +' '+ 'and' +' '+ y +' '+ 'is' +' ' + sum + '.'];
+  var sum = x + y;
+  return [sum,'The sum of' + ' ' + x + ' ' + 'and' + ' ' + y + ' ' + 'is' + ' ' + sum + '.'];
 }
 sum(4,7);
 // Here is the test for sum(); uncomment it to run it
@@ -33,8 +33,8 @@ Test this function by hand in the console to get it working, and when you think 
 //uncomment the call for the testMultiply() function and see if the test passes.*/
 // Write your code here
 function multiply(x,y){
-  var product = x*y;
-  return [product,'The product of' + ' ' + x +' '+ 'and'+' '+ y +' '+ 'is' +' ' +product +'.'];
+  var product = x * y;
+  return [product,'The product of' + ' ' + x + ' ' + 'and' + ' ' + y + ' ' + 'is' + ' ' + product + '.'];
 }
 multiply(4,7);
 // Here is the test for multiply(); uncomment it to run it
@@ -55,9 +55,9 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 // Write your code here
 function sumAndMultiply(x,y,z){
-var sum =x+y+z;
-var product=x*y*z;
-return [sum,product,x +' '+'and'+ ' '+y+' '+ 'and'+' ' + z +' '+ 'sum to'+' '+sum+'.','The product of'+' '+ x +' '+ 'and'+' '+ y +' '+ 'and'+' ' +z +' '+'is'+' '+ product+'.'];
+  var sum = x + y + z;
+  var product = x * y * z;
+  return [sum,product,x + ' ' + 'and' + ' ' + y + ' ' + 'and' + ' ' + z + ' ' + 'sum to' + ' ' + sum + '.','The product of' + ' ' + x + ' ' + 'and' + ' ' + y + ' ' + 'and' + ' ' + z + ' ' + 'is' + ' ' + product + '.'];
 }
 sumAndMultiply(4,7,5);
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -76,11 +76,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumArray(testArray) {
  // calculate total
- var total = 0;
- for (var i = 0; i < testArray.length; i++) {
-   total += testArray[i];
- }
- return [total,testArray[0]+','+ testArray[1]+ ','+ testArray[2]+' '+'was passed in as an array of numbers, and'+' '+ total+' ' + 'is their sum.'];
+  var total = 0;
+  for (var i = 0; i < testArray.length; i++) {
+    total += testArray[i];
+  }
+  return [total,testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' ' + 'was passed in as an array of numbers, and' + ' ' + total + ' ' + 'is their sum.'];
 }
 
 var testArray = [2,3,4];
@@ -105,14 +105,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here.
 function multiplyArray(testArray) {
  // calculate total
- var total = 1;
- for (var i = 0; i < testArray.length; i++) {
-   total = total*testArray[i];
- }
- return [total,'The numbers'+' '+testArray[0]+','+ testArray[1]+ ','+ testArray[2] +' '+ 'have a product of ' + total+'.'];
+  var total = 1;
+  for (var i = 0; i < testArray.length; i++) {
+    total = total * testArray[i];
+  }
+  return [total,'The numbers' + ' ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' ' + 'have a product of ' + total + '.'];
 }
 
-var testArray = [2,3,4];
+testArray = [2,3,4];
 multiplyArray(testArray);
 
 // Here is the test for multiplyArray(); uncomment it to run it
